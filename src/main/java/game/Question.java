@@ -52,4 +52,8 @@ public class Question {
     public void setFourthAnswer(String fourthAnswer) {
         this.fourthAnswer = fourthAnswer;
     }
+
+    public int getCORRECT_NUMBER_INDEX() {
+        return CORRECT_NUMBER_INDEX;
+    }
 }
