@@ -8,9 +8,22 @@ public class Question {
     private String fourthAnswer;
     private final int CORRECT_NUMBER_INDEX;
 
-
-    public Question(int CORRECT_NUMBER_INDEX) {
+    public Question(String question,
+                    String firstAnswer,
+                    String secondAnswer,
+                    String thirdAnswer,
+                    String fourthAnswer,
+                    int CORRECT_NUMBER_INDEX) {
         this.CORRECT_NUMBER_INDEX = CORRECT_NUMBER_INDEX;
+        this.fourthAnswer = fourthAnswer;
+        this.thirdAnswer = thirdAnswer;
+        this.secondAnswer = secondAnswer;
+        this.firstAnswer = firstAnswer;
+        this.question = question;
+    }
+
+    public int getCORRECT_NUMBER_INDEX() {
+        return CORRECT_NUMBER_INDEX;
     }
 
     public String getQuestion() {
@@ -51,9 +64,5 @@ public class Question {
 
     public void setFourthAnswer(String fourthAnswer) {
         this.fourthAnswer = fourthAnswer;
-    }
-
-    public int getCORRECT_NUMBER_INDEX() {
-        return CORRECT_NUMBER_INDEX;
     }
 }
